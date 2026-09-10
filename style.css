@@ -943,3 +943,31 @@ code {
     padding-top: 3.5rem;
   }
 }
+
+/* Resume card sits in the open space beside the Contact card on the Experience page. */
+.resume-card {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.4rem;
+  border-left: 4px solid var(--accent);
+}
+
+.resume-card .resume-copy > p:last-child {
+  max-width: 620px;
+  margin-top: 0.75rem;
+  color: var(--muted);
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+@media (max-width: 520px) {
+  .resume-actions .btn {
+    width: 100%;
+  }
+}
