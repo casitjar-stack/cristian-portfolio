@@ -818,8 +818,14 @@ code {
     padding-top: 4rem;
   }
 
+  /* Home page: show the profile picture before the intro text. */
   .hero-visual {
+    order: 1;
     justify-content: flex-start;
+  }
+
+  .hero-copy {
+    order: 2;
   }
 
   .portrait-card {
@@ -841,6 +847,33 @@ code {
   .about-layout,
   .experience-grid {
     grid-template-columns: 1fr;
+  }
+
+  /*
+     Experience page:
+     put the graduation/profile card first on mobile,
+     keep the main experience content second,
+     then show Education, Technical Stack, and Contact.
+  */
+  .experience-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-grid .side-column {
+    display: contents;
+  }
+
+  .experience-grid .profile-summary-card {
+    order: 1;
+  }
+
+  .experience-grid .main-column {
+    order: 2;
+  }
+
+  .experience-grid .side-column > article:not(.profile-summary-card) {
+    order: 3;
   }
 
   .photo-stack {
