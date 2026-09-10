@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristian Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Cristian Angelo M. Sitjar — Software Engineer and Computer Engineering graduate.">
+  <title>About | Cristian M. Sitjar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-            <h1>About Me</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Work.html">Work Experience</a>
-            </nav>
-    </header>
-<div class="container">
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
 
-    <!-- LEFT SIDE -->
-    <div class="left-content">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">CS</span><span class="brand-text">Cristian M. Sitjar</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="About.html">About</a>
+      <a href="Work.html">Experience</a>
+      <a href="Projects.html">Projects</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="page-heading section-shell">
+      <p class="eyebrow">About me</p>
+      <h1>Engineer by training, problem-solver by practice.</h1>
+      <p>I enjoy turning requirements into working software, understanding why systems fail, and improving them step by step.</p>
+    </section>
 
-        <div class="about">
-            <h2>Background</h2>
-            <p>
-                Hello! I'm Cristian Angelo M. Sitjar, a graduate of Bachelor of Science in Computer Engineering from Cavite State University – CCAT Campus, Class of 2024. Born on September 28, 2000, I have developed a strong interest in technology, programming, and problem-solving throughout my academic journey. My studies have provided me with a solid foundation in computer systems, software development, and engineering principles. I am passionate about continuously learning new technologies and improving my technical skills as I pursue opportunities in the field of computer engineering and software development.
-            </p>
-        </div>
+    <section class="section-shell about-layout">
+      <div class="about-copy-stack">
+        <article class="glass-card prose-card">
+          <h2>My background</h2>
+          <p>
+            I’m Cristian Angelo M. Sitjar, a Bachelor of Science in Computer Engineering graduate from Cavite State University – CCAT Campus. After graduation, I joined JRA Technologies Inc. as a Junior Software Engineer, where I completed an intensive Erlang bootcamp before moving into production work.
+          </p>
+          <p>
+            During my two years in software development, I worked on backend CRUD features, debugging, data handling, server-side logic, and production issues. I also collaborated with senior and junior teammates, participated in regular stand-ups, and later helped incoming trainees during their bootcamp.
+          </p>
+          <p>
+            I’m currently expanding beyond Erlang by building projects with NestJS, REST APIs, Flutter, Firebase/Firestore, HTML, CSS, JavaScript, PHP, MySQL, and Git. I’m interested in roles where I can keep growing as a Software Engineer while contributing practical solutions from day one.
+          </p>
+        </article>
 
-        <div class="facts">
-            <h2>Facts </h2>
+        <article class="glass-card">
+          <p class="eyebrow">How I work</p>
+          <h2>Strengths I bring to a team</h2>
+          <div class="value-grid">
+            <div class="value-item"><i class="fa-solid fa-magnifying-glass"></i><div><strong>Debugging &amp; analysis</strong><span>I break problems into smaller parts and trace behavior before changing code.</span></div></div>
+            <div class="value-item"><i class="fa-solid fa-people-group"></i><div><strong>Collaboration</strong><span>I ask for guidance when needed and communicate progress, blockers, and next steps.</span></div></div>
+            <div class="value-item"><i class="fa-solid fa-book-open"></i><div><strong>Continuous learning</strong><span>I’m comfortable learning unfamiliar technologies and applying them in working projects.</span></div></div>
+            <div class="value-item"><i class="fa-solid fa-list-check"></i><div><strong>Organized execution</strong><span>I value clear requirements, testing, and finishing tasks with attention to detail.</span></div></div>
+          </div>
+        </article>
 
-            <ul>
-                <li> Love Playing Basketball, Billiards and Chess🏀</li>
-                <li> Love playing Mobile legends and Valorant 🎮</li>
-                <li> Dog Lover🐶</li>
-                <li> Coffee Lover☕</li>
-            </ul>
-        </div>
+        <article class="glass-card">
+          <p class="eyebrow">Beyond code</p>
+          <h2>Interests</h2>
+          <div class="interest-chips">
+            <span>🏀 Basketball</span>
+            <span>🎱 Billiards</span>
+            <span>♟️ Chess</span>
+            <span>🎮 Valorant &amp; Mobile Legends</span>
+            <span>🐶 Dogs</span>
+            <span>☕ Coffee</span>
+          </div>
+        </article>
+      </div>
 
-    </div>
+      <aside class="photo-stack">
+        <figure class="photo-card tall">
+          <img src="about_picture1.jpg" alt="Cristian outdoors">
+        </figure>
+        <figure class="photo-card">
+          <img src="about_picture2.jpg" alt="Cristian in a casual setting">
+        </figure>
+      </aside>
+    </section>
+  </main>
 
-    <!-- RIGHT SIDE -->
-    <div class="right-content">
-
-        <div class="photo-frame photo1">
-            <img src="about_picture2.jpg">
-        </div>
-
-        <div class="photo-frame photo2">
-            <img src="about_picture1.jpg">
-        </div>
-
-    </div>
-
-</div>
-
-</body>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<footer>
+  <footer class="site-footer">
     <p>© 2026 Cristian Angelo M. Sitjar. All rights reserved.</p>
+    <a href="mailto:casitjar@gmail.com">Let’s connect</a>
   </footer>
+</body>
 </html>

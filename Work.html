@@ -1,121 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristian Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional experience, education, training, and technical skills of Cristian Angelo M. Sitjar.">
+  <title>Experience | Cristian Sitjar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-            <h1>Work Experience</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Work.html">Work Experience</a>
-            </nav>
-    </header>
-     <section id="front_page">
-            <img src="work_picture.jpg" class="profile-pic">
-            <h1>Cristian Angelo M. Sitjar</h1>
-            <h2>Junior Software Engineer</h2>
-     </section>
-     <div class="content-section">
- 
-    <!-- LEFT COLUMN -->
-    <div class="column">
-      <p class="column-label">Summary &amp; Background</p>
- 
-      <!-- About Me -->
-      <div class="card">
-        <h3><span class="icon">👋</span> PROFESSIONAL SUMMARY </h3>
-        <p>
-          <!-- I-EDIT: Isulat ang maikling intro mo dito -->
-          Motivated and detail-oriented Computer Engineering graduate with 2 years of experience as a Junior Software Engineer specializing in backend development. Skilled in Erlang programming and server-side application development.
-        </p>
-      </div>
- 
-      <!-- Education -->
-      <div class="card">
-        <h3><span class="icon">🎓</span> EDUCATION</h3>
-        <!-- I-EDIT: Palitan ng tunay mong school at degree -->
-        <p class="meta">2019 – 2024</p>
-        <h3> Cavite State University - Ccat Campus</h3>
-        <p>Bachelor of Science in Computer Engineering</p>
-        <p>PROJECTS: </p>
-        <li><h3>DEVELOPMENT OF AUTOMATED MICROCONTROLLER-BASED MIST DISINFECTANT ROBOT </h3></li>
-        <p>A project that involves creating an autonomous robot powered by a microcontroller that can navigate a room, detect obstacles, and automatically disinfect surfaces by spraying mist. It is designed to clean and sanitize areas without human intervention. </p>
-        <li><h3>ROBOTIC ARM USING ARDUINO </h3></li>
-        <p>A project that involves building a robotic arm controlled by an Arduino microcontroller, capable of moving and gripping to pick up and manipulate small objects using programmed or manual control.</p>
-        
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
 
-      </div>
- 
-      <!-- Skills -->
-      <div class="card">
-        <h3><span class="icon">🛠️</span> SKILLS </h3>
-        <!-- I-EDIT: Dagdagan o bawasan ang skills mo -->
-        <div class="skill-tags">
-          <span>Erlang</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Arduino (C++)</span>
-          <span>Github</span>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">CS</span><span class="brand-text">Cristian Sitjar</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a class="active" href="Work.html">Experience</a>
+      <a href="Projects.html">Projects</a>
+    </nav>
+  </header>
 
-        </div>
+  <main>
+    <section class="page-heading section-shell">
+      <p class="eyebrow">Experience</p>
+      <h1>Two years of backend development, production work, and continuous learning.</h1>
+      <p>My strongest professional experience is in Erlang-based backend systems, supported by hands-on practice with modern web, API, mobile, and database tools.</p>
+    </section>
+
+    <section class="section-shell experience-grid">
+      <div class="main-column">
+        <article class="glass-card timeline-card">
+          <div class="timeline-head">
+            <div>
+              <p class="meta">June 2024 – June 2026</p>
+              <h2>Junior Software Engineer</h2>
+              <p class="company">JRA Technologies Inc. · Makati City</p>
+            </div>
+            <span class="role-badge">2 years</span>
+          </div>
+          <ul class="clean-list">
+            <li>Developed and maintained backend features using Erlang/OTP, including CRUD operations, data conversion, debugging, and server-side logic.</li>
+            <li>Worked on a Fleet Management System with modules for billing, car rental, vehicle master list, fuel consumption, monthly summaries, and dashboards.</li>
+            <li>Implemented state-machine logic for business workflows such as Billing, Car Rental, and Vehicle Master List.</li>
+            <li>Worked on a loan-management system and supported production fixes and feature improvements.</li>
+            <li>Resolved a bulk-upload issue where fast concurrent inserts caused missing rows by routing requests through a message queue to serialize database writes.</li>
+            <li>Collaborated with juniors, seniors, and managers through regular stand-ups, debugging sessions, and code/problem discussions.</li>
+            <li>Helped incoming trainees during their Erlang bootcamp by answering questions and making it easier for them to ask for support.</li>
+          </ul>
+        </article>
+
+        <article class="glass-card">
+          <p class="eyebrow">Company training</p>
+          <h2>Erlang Bootcamp · 3 Levels</h2>
+          <div class="training-grid">
+            <div class="training-item">
+              <span>01</span>
+              <div><strong>Vernam 26</strong><p>Built text encryption/decryption logic using recursion, string processing, and functional programming concepts.</p></div>
+            </div>
+            <div class="training-item">
+              <span>02</span>
+              <div><strong>Galois LFSR</strong><p>Created a binary pseudo-random sequence generator using recursion and bit manipulation.</p></div>
+            </div>
+            <div class="training-item">
+              <span>03</span>
+              <div><strong>Replication Server</strong><p>Built replication logic involving Mnesia/ETS concepts and server-side data synchronization.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card">
+          <p class="eyebrow">Internship</p>
+          <h2>On-the-Job Training · A.L. E-Components International, Inc.</h2>
+          <p class="meta">240 hours · Rosario, Cavite</p>
+          <ul class="clean-list compact-list">
+            <li>Assisted with inventory management and basic IT support.</li>
+            <li>Performed software and hardware troubleshooting and operating-system installation.</li>
+            <li>Supported manual testing and day-to-day technical tasks.</li>
+          </ul>
+        </article>
       </div>
-    </div>
- 
-    <!-- RIGHT COLUMN -->
-    <div class="column">
-      <p class="column-label">Experience &amp; Projects</p>
- 
-      <!-- Work Experience -->
-      <div class="card">
-        <h3><span class="icon">💼</span> WORK EXPERIENCE</h3>
-        <!-- I-EDIT: Palitan ng tunay mong work experience -->
-        <p class="meta">June 2024 – June 2026</p>
-        <p><strong class="highlight">JRA Technology Inc.</strong> — Junior Software Engineer</p>
-        <ul>
-          <li>Developed and maintained backend applications and services.</li>
-          <li>Implemented server-side functionalities using Erlang.</li>
-          <li>Participated in testing, debugging, and deployment activities.</li>
-          <li>Collaborated with team members to improve system reliability.</li>
-        </ul>
-      </div>
- 
-      <!-- Projects -->
-      <div class="card">
-        <h3><span class="icon">🚀</span> TRAINING AND CERTIFACATION</h3>
-        <!-- I-EDIT: Palitan ng tunay mong mga projects -->
-        <p><strong class="highlight">Bootcamp level 1:Vernam 26</strong></p>
-        <p>Built a text encryption and decryption program using the Vernam 26 cipher in Erlang, utilizing recursion, string processing, and functional programming concepts.</p>
-        
-        <p><strong class="highlight">Bootcamp level 2: Galois LFSR (binary)</strong></p>
-        <p>Built a binary Galois LFSR generator in Erlang, utilizing recursion and bit manipulation to produce pseudo-random binary sequences.</p>
-        <p><strong class="highlight">Bootcamp level 3: Replication Server(BCL)</strong></p>
-        <p>Built a data replication system that mirrors Mnesia database records using ETS, demonstrating knowledge of database synchronization, in-memory storage, and Erlang server development.</p>
-      </div>
- 
-      <!-- Contact -->
-      <div class="card">
-        <h3><span class="icon">📬</span> Contact &amp; Links</h3>
-        <!-- I-EDIT: Palitan ng tunay mong contact info -->
-        <div class="contact-links">
-          <a href="casitjar@gmail.com">✉️ casitjar@gmail.com</a>
-          <a href="https://github.com/casitjar-stack" target="_blank">🐙 github.com/cristian-stack</a>
-          <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank">💼 linkedin.com/in/cristian</a>
-        </div>
-      </div>
-    </div>
- 
-  </div>
- 
-  <!-- FOOTER -->
-  <footer>
+
+      <aside class="side-column">
+        <article class="glass-card profile-summary-card">
+          <img src="work_picture.jpg" alt="Cristian Sitjar graduation portrait">
+          <div>
+            <p class="eyebrow">Profile</p>
+            <h2>Cristian A. M. Sitjar</h2>
+            <p>Software Engineer · Backend Development</p>
+          </div>
+        </article>
+
+        <article class="glass-card">
+          <p class="eyebrow">Education</p>
+          <h2>BS Computer Engineering</h2>
+          <p>Cavite State University – CCAT Campus</p>
+          <p class="meta">2019 – 2024</p>
+        </article>
+
+        <article class="glass-card">
+          <p class="eyebrow">Technical stack</p>
+          <div class="skill-groups">
+            <div><strong>Languages</strong><div class="skill-tags"><span>Erlang</span><span>JavaScript</span><span>TypeScript</span><span>Dart</span><span>PHP</span><span>C++</span></div></div>
+            <div><strong>Backend / APIs</strong><div class="skill-tags"><span>Erlang/OTP</span><span>NestJS</span><span>REST API</span><span>Node.js</span></div></div>
+            <div><strong>Frontend / Mobile</strong><div class="skill-tags"><span>HTML</span><span>CSS</span><span>Flutter</span></div></div>
+            <div><strong>Data</strong><div class="skill-tags"><span>Graph Engine</span><span>Mnesia</span><span>ETS</span><span>MySQL</span><span>Firestore</span></div></div>
+            <div><strong>Tools</strong><div class="skill-tags"><span>Git/GitHub</span><span>Postman</span><span>Docker</span><span>VS Code</span><span>Android Studio</span><span>Vitest</span></div></div>
+          </div>
+        </article>
+
+        <article class="glass-card contact-card">
+          <p class="eyebrow">Contact</p>
+          <a href="mailto:casitjar@gmail.com"><i class="fa-solid fa-envelope"></i> casitjar@gmail.com</a>
+          <a href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> github.com/casitjar-stack</a>
+          <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
+          <a href="https://www.facebook.com/CrstnAnglM.Stjr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook Profile</a>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <p>© 2026 Cristian Angelo M. Sitjar. All rights reserved.</p>
+    <a href="Projects.html">View projects</a>
   </footer>
 </body>
 </html>

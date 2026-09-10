@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected software and engineering projects by Cristian Angelo M. Sitjar.">
+  <title>Projects | Cristian M. Sitjar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">CS</span><span class="brand-text">Cristian M. Sitjar</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Work.html">Experience</a>
+      <a class="active" href="Projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading section-shell">
+      <p class="eyebrow">Selected projects</p>
+      <h1>Projects that show how I learn, build, test, and ship.</h1>
+      <p>From backend APIs and mobile apps to full-stack fundamentals and embedded systems, these projects reflect both my professional direction and hands-on learning.</p>
+    </section>
+
+    <section class="section-shell projects-grid">
+      <article class="project-card featured-project" id="cartly">
+        <div class="project-number">01</div>
+        <div class="project-content">
+          <div class="project-topline"><span class="project-type">Mobile + Backend</span><span class="project-status">Featured</span></div>
+          <h2>Cartly — Shopping List Application</h2>
+          <p>A full-stack shopping list project built with a Flutter mobile client, NestJS backend, Firebase Admin SDK, and Cloud Firestore. User data is isolated through an <code>x-user-id</code> request header.</p>
+          <ul class="clean-list compact-list">
+            <li>Create, list, toggle, and delete shopping-list items.</li>
+            <li>Clear bought items while preserving user ownership boundaries.</li>
+            <li>Backend tests verify missing-user rejection and user-isolated operations.</li>
+            <li>Flutter tests and static analysis completed successfully.</li>
+          </ul>
+          <div class="skill-tags"><span>Flutter</span><span>Dart</span><span>NestJS</span><span>TypeScript</span><span>Firestore</span><span>Vitest</span><span>REST API</span></div>
+          <div class="project-links">
+            <a class="btn btn-secondary" href="https://github.com/casitjar-stack/cartly" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">02</div>
+        <div class="project-content">
+          <div class="project-topline"><span class="project-type">Full Stack Practice</span></div>
+          <h2>Student Portal</h2>
+          <p>A web-based student portal focused on authentication, CRUD operations, session handling, role-based authorization, and secure database access.</p>
+          <ul class="clean-list compact-list">
+            <li>Student registration and login with password hashing.</li>
+            <li>Session management and login-attempt limiting.</li>
+            <li>Admin and student roles with different permissions.</li>
+            <li>Prepared statements and profile update functionality.</li>
+          </ul>
+          <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>XAMPP</span></div>
+          <div class="project-links">
+            <a class="btn btn-secondary" href="https://student-portal-demo.infinityfreeapp.com/html/index.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">03</div>
+        <div class="project-content">
+          <div class="project-topline"><span class="project-type">Embedded Systems</span></div>
+          <h2>Automated Mist Disinfectant Robot</h2>
+          <p>An academic microcontroller-based robot designed to move autonomously, detect obstacles, and spray disinfectant mist in an area with minimal human intervention.</p>
+          <div class="skill-tags"><span>Arduino</span><span>C++</span><span>Microcontrollers</span><span>Sensors</span><span>Automation</span></div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">04</div>
+        <div class="project-content">
+          <div class="project-topline"><span class="project-type">Embedded Systems</span></div>
+          <h2>Arduino Robotic Arm</h2>
+          <p>A programmable robotic arm capable of movement and gripping actions for manipulating small objects, built to practice control logic and hardware-software integration.</p>
+          <div class="skill-tags"><span>Arduino</span><span>C++</span><span>Servo Control</span><span>Hardware Integration</span></div>
+        </div>
+      </article>
+
+      <article class="project-card wide-project">
+        <div class="project-number">05</div>
+        <div class="project-content">
+          <div class="project-topline"><span class="project-type">Professional Project Highlights</span></div>
+          <h2>Backend Systems at JRA Technologies</h2>
+          <p>Production work included a Fleet Management System and a loan-management system. My contributions focused on backend logic, CRUD operations, state machines, debugging, data processing, and reliability improvements in Erlang-based systems.</p>
+          <div class="project-case">
+            <strong>Problem solved:</strong>
+            <p>A bulk-upload flow occasionally missed rows because requests were inserting too quickly. I helped address the issue by routing requests through a message queue so writes could be processed in sequence.</p>
+          </div>
+          <div class="skill-tags"><span>Erlang/OTP</span><span>State Machines</span><span>Message Passing</span><span>Backend CRUD</span><span>Debugging</span><span>Data Handling</span></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Cristian Angelo M. Sitjar. All rights reserved.</p>
+    <a href="mailto:casitjar@gmail.com">Discuss an opportunity</a>
+  </footer>
+</body>
+</html>
