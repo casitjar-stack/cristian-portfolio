@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Selected software and engineering projects by Cristian Angelo M. Sitjar.">
+  <meta name="description" content="Selected software, AI automation, and engineering projects by Cristian Angelo M. Sitjar.">
   <title>Projects | Cristian M. Sitjar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,28 +14,69 @@
   <div class="page-glow glow-one"></div>
   <div class="page-glow glow-two"></div>
 
+  <!-- FLOATING STICKY HEADER -->
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark">CS</span><span class="brand-text">Cristian M. Sitjar</span></a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Work.html">Experience</a>
-      <a class="active" href="Projects.html">Projects</a>
-    </nav>
+    <div class="nav-container">
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Work.html">Experience</a>
+        <a class="active" href="Projects.html">Projects</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
   </header>
 
   <main>
     <section class="page-heading section-shell">
       <p class="eyebrow">Selected projects</p>
       <h1>Projects that show how I learn, build, test, and ship.</h1>
-      <p>From backend APIs and mobile apps to full-stack fundamentals and embedded systems, these projects reflect both my professional direction and hands-on learning.</p>
+      <p>From AI automation workflows and backend APIs to mobile apps, full-stack fundamentals, and embedded systems, these projects reflect both my professional direction and hands-on technical expansion.</p>
     </section>
 
     <section class="section-shell projects-grid">
-      <article class="project-card featured-project" id="cartly">
+      
+      <!-- AI Automation Project -->
+      <article class="project-card featured-project" id="ai-automation">
         <div class="project-number">01</div>
         <div class="project-content">
-          <div class="project-topline"><span class="project-type">Mobile + Backend</span><span class="project-status">Featured</span></div>
+          <div class="project-topline">
+            <span class="project-type">AI & Automation</span>
+            <span class="project-status">Featured</span>
+          </div>
+          <h2>AI-Powered Workflow Automation Pipeline</h2>
+          <p>An automated workflow pipeline designed to seamlessly integrate LLM APIs (OpenAI / Gemini) with third-party tools, handling data extraction, real-time message routing, and automated task execution without manual intervention.</p>
+          <ul class="clean-list compact-list">
+            <li>Built custom n8n / webhook pipelines to automate document processing and instant message handling.</li>
+            <li>Integrated Generative AI models to analyze unstructured inputs, summarize content, and make structured decisions.</li>
+            <li>Connected external channels (Telegram / Email / Google Sheets) for real-time notifications and synchronized data storage.</li>
+            <li>Designed for high reliability, robust error handling, and scalable execution across services.</li>
+          </ul>
+          <div class="skill-tags">
+            <span>n8n</span>
+            <span>OpenAI API</span>
+            <span>Gemini API</span>
+            <span>Webhooks</span>
+            <span>REST API</span>
+            <span>JSON Parsing</span>
+            <span>Automation</span>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-secondary" href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cartly Shopping List App -->
+      <article class="project-card" id="cartly">
+        <div class="project-number">02</div>
+        <div class="project-content">
+          <div class="project-topline"><span class="project-type">Mobile + Backend</span></div>
           <h2>Cartly — Shopping List Application</h2>
           <p>A full-stack shopping list project built with a Flutter mobile client, NestJS backend, Firebase Admin SDK, and Cloud Firestore. User data is isolated through an <code>x-user-id</code> request header.</p>
           <ul class="clean-list compact-list">
@@ -52,8 +92,9 @@
         </div>
       </article>
 
+      <!-- Student Portal -->
       <article class="project-card">
-        <div class="project-number">02</div>
+        <div class="project-number">03</div>
         <div class="project-content">
           <div class="project-topline"><span class="project-type">Full Stack Practice</span></div>
           <h2>Student Portal</h2>
@@ -66,13 +107,14 @@
           </ul>
           <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>XAMPP</span></div>
           <div class="project-links">
-            <a class="btn btn-secondary" href="https://student-portal-demo.infinityfreeapp.com/html/index.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            <a class="btn btn-secondary" href="https://casitjar-portal-demo.freedev.app/html/index.html?i=1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
           </div>
         </div>
       </article>
 
+      <!-- Automated Mist Disinfectant Robot -->
       <article class="project-card">
-        <div class="project-number">03</div>
+        <div class="project-number">04</div>
         <div class="project-content">
           <div class="project-topline"><span class="project-type">Embedded Systems</span></div>
           <h2>Automated Mist Disinfectant Robot</h2>
@@ -81,8 +123,9 @@
         </div>
       </article>
 
+      <!-- Arduino Robotic Arm -->
       <article class="project-card">
-        <div class="project-number">04</div>
+        <div class="project-number">05</div>
         <div class="project-content">
           <div class="project-topline"><span class="project-type">Embedded Systems</span></div>
           <h2>Arduino Robotic Arm</h2>
@@ -91,8 +134,9 @@
         </div>
       </article>
 
+      <!-- Backend Systems at JRA Technologies -->
       <article class="project-card wide-project">
-        <div class="project-number">05</div>
+        <div class="project-number">06</div>
         <div class="project-content">
           <div class="project-topline"><span class="project-type">Professional Project Highlights</span></div>
           <h2>Backend Systems at JRA Technologies</h2>
@@ -104,6 +148,7 @@
           <div class="skill-tags"><span>Erlang/OTP</span><span>State Machines</span><span>Message Passing</span><span>Backend CRUD</span><span>Debugging</span><span>Data Handling</span></div>
         </div>
       </article>
+
     </section>
   </main>
 
@@ -111,5 +156,8 @@
     <p>© 2026 Cristian Angelo M. Sitjar. All rights reserved.</p>
     <a href="mailto:casitjar@gmail.com">Discuss an opportunity</a>
   </footer>
+
+  <!-- SCRIPT FOR DARK/LIGHT MODE TOGGLE -->
+  <script src="main.js"></script>
 </body>
 </html>

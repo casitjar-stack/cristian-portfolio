@@ -7,7 +7,6 @@
   <title>About | Cristian M. Sitjar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,14 +14,20 @@
   <div class="page-glow glow-one"></div>
   <div class="page-glow glow-two"></div>
 
+  <!-- FLOATING STICKY HEADER -->
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark">CS</span><span class="brand-text">Cristian M. Sitjar</span></a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a class="active" href="About.html">About</a>
-      <a href="Work.html">Experience</a>
-      <a href="Projects.html">Projects</a>
-    </nav>
+    <div class="nav-container">
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="About.html">About</a>
+        <a href="Work.html">Experience</a>
+        <a href="Projects.html">Projects</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
   </header>
 
   <main>
@@ -43,7 +48,7 @@
             During my two years in software development, I worked on backend CRUD features, debugging, data handling, server-side logic, and production issues. I also collaborated with senior and junior teammates, participated in regular stand-ups, and later helped incoming trainees during their bootcamp.
           </p>
           <p>
-            I’m currently expanding beyond Erlang by building projects with NestJS, REST APIs, Flutter, Firebase/Firestore, HTML, CSS, JavaScript, PHP, MySQL, and Git. I’m interested in roles where I can keep growing as a Software Engineer while contributing practical solutions from day one.
+            I’m currently expanding beyond Erlang by building projects with n8n, AI APIs (OpenAI/Gemini), NestJS, REST APIs, Flutter, Firebase/Firestore, HTML, CSS, JavaScript, PHP, MySQL, and Git. I’m interested in roles where I can keep growing as a Software Engineer while contributing practical solutions from day one.
           </p>
         </article>
 
@@ -87,5 +92,8 @@
     <p>© 2026 Cristian Angelo M. Sitjar. All rights reserved.</p>
     <a href="mailto:casitjar@gmail.com">Let’s connect</a>
   </footer>
+
+  <!-- SCRIPT FOR DARK/LIGHT MODE TOGGLE -->
+  <script src="main.js"></script>
 </body>
 </html>

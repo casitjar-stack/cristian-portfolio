@@ -11,6 +11,18 @@
   --max-width: 1120px;
 }
 
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-soft: #334155;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --line: #334155;
+  --accent: #3b82f6;
+  --accent-dark: #60a5fa;
+  --accent-soft: rgba(59, 130, 246, 0.15);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +37,7 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--text);
-  font-family: "Inter", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /* Pinalitan ng Arial */
   line-height: 1.65;
 }
 
@@ -45,28 +57,35 @@ code {
   font-size: 0.9em;
 }
 
-/* Kept in the HTML so older pages still work, but intentionally hidden.
-   The simpler background feels more like a personal portfolio than a template. */
 .page-glow {
   display: none;
 }
 
 .section-shell,
-.site-footer,
-.site-header {
+.site-footer {
   width: min(calc(100% - 40px), var(--max-width));
   margin-left: auto;
   margin-right: auto;
 }
 
+/* FLOATING STICKY HEADER */
 .site-header {
-  margin-top: 20px;
-  padding: 0 0 16px;
+  position: sticky;
+  top: 16px; /* Space sa taas para magmukhang nakalutang */
+  z-index: 1000;
+  background: var(--surface);
+  width: min(calc(100% - 40px), var(--max-width));
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  border-bottom: 1px solid var(--line);
+  border: 1px solid var(--line);
+  border-radius: 12px; /* Curved corners para sa floating effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); /* Shadow para mukhang nakalutang */
+  transition: all 0.3s ease;
 }
 
 .brand {
@@ -83,7 +102,7 @@ code {
   display: grid;
   place-items: center;
   background: var(--text);
-  color: #fff;
+  color: var(--bg);
   border-radius: 7px;
   font-size: 0.82rem;
   letter-spacing: 0.03em;
@@ -91,6 +110,13 @@ code {
 
 .brand-text {
   font-size: 0.98rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .nav-links {
@@ -106,6 +132,7 @@ code {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-links a::after {
@@ -129,13 +156,33 @@ code {
   width: 100%;
 }
 
+/* Dark Mode Toggle Button */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--text);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .hero {
   min-height: 70vh;
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
   gap: 4.5rem;
   align-items: center;
-  padding: 5rem 0 4rem;
+  padding: 4rem 0 4rem;
 }
 
 .eyebrow {
@@ -162,7 +209,7 @@ code {
 .feature-card h2,
 .glass-card h2,
 .project-card h2 {
-  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /* Naka-Arial na rin ang headings */
 }
 
 .hero h1 {
@@ -202,7 +249,7 @@ code {
   border: 1px solid var(--line);
   border-radius: 6px;
   background: transparent;
-  color: #4f4d49;
+  color: var(--muted);
   font-size: 0.8rem;
 }
 
@@ -370,7 +417,7 @@ code {
 }
 
 .stat-number {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.65rem;
   font-weight: 700;
   color: var(--accent-dark);
@@ -438,7 +485,7 @@ code {
 }
 
 .page-heading {
-  padding: 5rem 0 2rem;
+  padding: 3rem 0 2rem;
 }
 
 .page-heading h1 {
@@ -501,7 +548,7 @@ code {
   padding: 0.9rem;
   border: 1px solid var(--line);
   border-radius: 7px;
-  background: #faf7f1;
+  background: var(--surface-soft);
 }
 
 .value-item i {
@@ -667,10 +714,6 @@ code {
   font-size: 0.86rem;
 }
 
-.skill-tags span {
-  font-size: 0.75rem;
-}
-
 .contact-card {
   display: grid;
   gap: 0.6rem;
@@ -733,7 +776,7 @@ code {
   border-radius: 6px;
   background: var(--surface-soft);
   color: var(--accent-dark);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
 }
@@ -784,7 +827,7 @@ code {
   margin-top: 1.1rem;
   padding: 0.9rem;
   border-left: 3px solid var(--accent);
-  background: #faf7f1;
+  background: var(--surface-soft);
 }
 
 .project-case p {
@@ -811,6 +854,27 @@ code {
   text-decoration: underline;
 }
 
+.resume-card {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.4rem;
+  border-left: 4px solid var(--accent);
+}
+
+.resume-card .resume-copy > p:last-child {
+  max-width: 620px;
+  margin-top: 0.75rem;
+  color: var(--muted);
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
 @media (max-width: 960px) {
   .hero {
     grid-template-columns: 1fr;
@@ -818,7 +882,6 @@ code {
     padding-top: 4rem;
   }
 
-  /* Home page: show the profile picture before the intro text. */
   .hero-visual {
     order: 1;
     justify-content: flex-start;
@@ -849,12 +912,6 @@ code {
     grid-template-columns: 1fr;
   }
 
-  /*
-     Experience page:
-     put the graduation/profile card first on mobile,
-     keep the main experience content second,
-     then show Education, Technical Stack, and Contact.
-  */
   .experience-grid {
     display: flex;
     flex-direction: column;
@@ -889,8 +946,15 @@ code {
 
 @media (max-width: 720px) {
   .site-header {
+    top: 8px;
     align-items: flex-start;
     flex-direction: column;
+    padding: 12px 16px;
+  }
+
+  .nav-container {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .nav-links {
@@ -942,7 +1006,10 @@ code {
 
 @media (max-width: 520px) {
   .section-shell,
-  .site-footer,
+  .site-footer {
+    width: min(calc(100% - 24px), var(--max-width));
+  }
+
   .site-header {
     width: min(calc(100% - 24px), var(--max-width));
   }
@@ -973,33 +1040,9 @@ code {
   }
 
   .page-heading {
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
   }
-}
 
-/* Resume card sits in the open space beside the Contact card on the Experience page. */
-.resume-card {
-  min-height: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.4rem;
-  border-left: 4px solid var(--accent);
-}
-
-.resume-card .resume-copy > p:last-child {
-  max-width: 620px;
-  margin-top: 0.75rem;
-  color: var(--muted);
-}
-
-.resume-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-@media (max-width: 520px) {
   .resume-actions .btn {
     width: 100%;
   }

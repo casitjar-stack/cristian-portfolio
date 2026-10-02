@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional experience, education, training, and technical skills of Cristian Angelo M. Sitjar.">
+  <meta name="description" content="Professional experience and technical skills of Cristian Angelo M. Sitjar.">
   <title>Experience | Cristian M. Sitjar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,21 +14,27 @@
   <div class="page-glow glow-one"></div>
   <div class="page-glow glow-two"></div>
 
+  <!-- FLOATING STICKY HEADER -->
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark">CS</span><span class="brand-text">Cristian M. Sitjar</span></a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a class="active" href="Work.html">Experience</a>
-      <a href="Projects.html">Projects</a>
-    </nav>
+    <div class="nav-container">
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a class="active" href="Work.html">Experience</a>
+        <a href="Projects.html">Projects</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
   </header>
 
   <main>
     <section class="page-heading section-shell">
-      <p class="eyebrow">Experience</p>
-      <h1>Two years of backend development, production work, and continuous learning.</h1>
-      <p>My strongest professional experience is in Erlang-based backend systems, supported by hands-on practice with modern web, API, mobile, and database tools.</p>
+      <p class="eyebrow">Professional journey</p>
+      <h1>Backend development experience, structured bootcamp, and AI integration.</h1>
+      <p>My career began with an intensive Erlang bootcamp and two years of production backend software development at JRA Technologies Inc., and continues to evolve through hands-on project work in NestJS, Flutter, REST APIs, and AI automation workflows.</p>
     </section>
 
     <section class="section-shell experience-grid">
@@ -37,64 +42,73 @@
         <article class="glass-card timeline-card">
           <div class="timeline-head">
             <div>
-              <p class="meta">June 2024 – June 2026</p>
+              <p class="meta">June 2024 — June 2026 • Makati City</p>
               <h2>Junior Software Engineer</h2>
-              <p class="company">JRA Technologies Inc. · Makati City</p>
+              <p class="company">JRA Technologies Inc.</p>
             </div>
-            <span class="role-badge">2 years</span>
+            <span class="role-badge">2 Years</span>
           </div>
+
           <ul class="clean-list">
-            <li>Developed and maintained backend features using Erlang/OTP, including CRUD operations, data conversion, debugging, and server-side logic.</li>
-            <li>Worked on a Fleet Management System with modules for billing, car rental, vehicle master list, fuel consumption, monthly summaries, and dashboards.</li>
-            <li>Implemented state-machine logic for business workflows such as Billing, Car Rental, and Vehicle Master List.</li>
-            <li>Worked on a loan-management system and supported production fixes and feature improvements.</li>
-            <li>Resolved a bulk-upload issue where fast concurrent inserts caused missing rows by routing requests through a message queue to serialize database writes.</li>
-            <li>Collaborated with juniors, seniors, and managers through regular stand-ups, debugging sessions, and code/problem discussions.</li>
-            <li>Helped incoming trainees during their Erlang bootcamp by answering questions and making it easier for them to ask for support.</li>
+            <li>Developed and maintained server-side logic and backend features using Erlang/OTP.</li>
+            <li>Handled backend CRUD operations, business logic, data processing, and debugging production issues.</li>
+            <li>Contributed to a Fleet Management System and loan management modules.</li>
+            <li>Helped resolve bulk-upload performance bottlenecks by using message queues for sequential execution.</li>
+            <li>Participated in regular stand-ups, code reviews, testing, and deployment preparation.</li>
+            <li>Assisted incoming trainees by guiding them through Erlang bootcamp concepts and exercises.</li>
           </ul>
         </article>
 
         <article class="glass-card">
-          <p class="eyebrow">Company training</p>
-          <h2>Erlang Bootcamp · 3 Levels</h2>
+          <p class="eyebrow">Formal preparation</p>
+          <h2>Company Bootcamp Progression</h2>
           <div class="training-grid">
             <div class="training-item">
-              <span>01</span>
-              <div><strong>Vernam 26</strong><p>Built text encryption/decryption logic using recursion, string processing, and functional programming concepts.</p></div>
+              <span>L1</span>
+              <div>
+                <strong>Vernam 26 Cipher</strong>
+                <p>Implemented text encryption/decryption in Erlang using recursion, string processing, and functional concepts.</p>
+              </div>
             </div>
             <div class="training-item">
-              <span>02</span>
-              <div><strong>Galois LFSR</strong><p>Created a binary pseudo-random sequence generator using recursion and bit manipulation.</p></div>
+              <span>L2</span>
+              <div>
+                <strong>Galois LFSR (Binary)</strong>
+                <p>Built a binary pseudo-random generator in Erlang using bit manipulation and recursive algorithms.</p>
+              </div>
             </div>
             <div class="training-item">
-              <span>03</span>
-              <div><strong>Replication Server</strong><p>Built replication logic involving Mnesia/ETS concepts and server-side data synchronization.</p></div>
+              <span>L3</span>
+              <div>
+                <strong>Replication Server (BCL)</strong>
+                <p>Built a data replication mechanism mirroring Mnesia records into ETS for in-memory synchronization practice.</p>
+              </div>
             </div>
           </div>
         </article>
 
         <article class="glass-card">
-          <p class="eyebrow">Internship</p>
-          <h2>On-the-Job Training · A.L. E-Components International, Inc.</h2>
-          <p class="meta">240 hours · Rosario, Cavite</p>
+          <p class="eyebrow">Practical experience</p>
+          <h2>On-the-Job Training</h2>
+          <p class="company">A.L.E - Component International Incorporated • Jul 2023 – Aug 2023</p>
           <ul class="clean-list compact-list">
-            <li>Assisted with inventory management and basic IT support.</li>
-            <li>Performed software and hardware troubleshooting and operating-system installation.</li>
-            <li>Supported manual testing and day-to-day technical tasks.</li>
+            <li>Handled hardware/software troubleshooting, OS installation, and manual system testing.</li>
+            <li>Managed IT asset inventory and assisted technical support teams in day-to-day operations.</li>
           </ul>
         </article>
 
+        <!-- Resume Download Card -->
         <article class="glass-card resume-card">
           <div class="resume-copy">
-            <p class="eyebrow">Resume</p>
-            <h2>Want the one-page version?</h2>
-            <p>View my resume for a quick overview of my professional experience, education, training, and technical skills.</p>
+            <p class="eyebrow">Curriculum Vitae</p>
+            <h2>Looking for a detailed resume?</h2>
+            <p>You can view my complete professional history, educational background, and technical credentials in PDF format.</p>
           </div>
           <div class="resume-actions">
             <a class="btn btn-primary" href="Resume - Cristian M. Sitjar.pdf" target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-file-pdf"></i> View Resume
+              <i class="fa-solid fa-file-pdf"></i> View Resume PDF
             </a>
-            <a class="btn btn-secondary" href="Resume - Cristian M. Sitjar.pdf" download>
+            <a class="btn btn-secondary" href="Resume - Cristian M. Sitjar.pdf" download="Resume_Cristian_Sitjar.pdf">
               <i class="fa-solid fa-download"></i> Download PDF
             </a>
           </div>
@@ -103,38 +117,70 @@
 
       <aside class="side-column">
         <article class="glass-card profile-summary-card">
-          <img src="work_picture.jpg" alt="Cristian M. Sitjar graduation portrait">
+          <img src="about_picture1.jpg" alt="Cristian M. Sitjar">
           <div>
-            <p class="eyebrow">Profile</p>
-            <h2>Cristian A. M. Sitjar</h2>
-            <p>Software Engineer · Backend Development</p>
+            <h3>Cristian Angelo M. Sitjar</h3>
+            <p class="meta">BS Computer Engineering Graduate</p>
+            <p>Cavite State University – CCAT Campus (2019 – 2024)</p>
           </div>
         </article>
 
         <article class="glass-card">
-          <p class="eyebrow">Education</p>
-          <h2>BS Computer Engineering</h2>
-          <p>Cavite State University – CCAT Campus</p>
-          <p class="meta">2019 – 2024</p>
-        </article>
-
-        <article class="glass-card">
-          <p class="eyebrow">Technical stack</p>
+          <p class="eyebrow">Technical Stack</p>
+          <h2>Tools &amp; Technologies</h2>
           <div class="skill-groups">
-            <div><strong>Languages</strong><div class="skill-tags"><span>Erlang</span><span>JavaScript</span><span>TypeScript</span><span>Dart</span><span>PHP</span><span>C++</span></div></div>
-            <div><strong>Backend / APIs</strong><div class="skill-tags"><span>Erlang/OTP</span><span>NestJS</span><span>REST API</span><span>Node.js</span></div></div>
-            <div><strong>Frontend / Mobile</strong><div class="skill-tags"><span>HTML</span><span>CSS</span><span>Flutter</span></div></div>
-            <div><strong>Data</strong><div class="skill-tags"><span>Graph Engine</span><span>Mnesia</span><span>ETS</span><span>MySQL</span><span>Firestore</span></div></div>
-            <div><strong>Tools</strong><div class="skill-tags"><span>Git/GitHub</span><span>Postman</span><span>Docker</span><span>VS Code</span><span>Android Studio</span><span>Vitest</span></div></div>
+            <div>
+              <strong>AI &amp; Automation</strong>
+              <div class="skill-tags">
+                <span>n8n</span>
+                <span>OpenAI API</span>
+                <span>Gemini API</span>
+                <span>Webhooks</span>
+                <span>Prompt Engineering</span>
+                <span>Workflow Automation</span>
+              </div>
+            </div>
+            <div>
+              <strong>Backend &amp; Languages</strong>
+              <div class="skill-tags">
+                <span>Erlang/OTP</span>
+                <span>NestJS</span>
+                <span>TypeScript</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>Dart</span>
+                <span>C++ (Arduino)</span>
+              </div>
+            </div>
+            <div>
+              <strong>Databases &amp; Mobile</strong>
+              <div class="skill-tags">
+                <span>Cloud Firestore</span>
+                <span>MySQL</span>
+                <span>Mnesia / ETS</span>
+                <span>Flutter</span>
+                <span>REST APIs</span>
+              </div>
+            </div>
+            <div>
+              <strong>Tools &amp; Workflow</strong>
+              <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Vitest</span>
+                <span>XAMPP</span>
+                <span>Postman / Bruno</span>
+              </div>
+            </div>
           </div>
         </article>
 
         <article class="glass-card contact-card">
-          <p class="eyebrow">Contact</p>
+          <p class="eyebrow">Get in touch</p>
           <a href="mailto:casitjar@gmail.com"><i class="fa-solid fa-envelope"></i> casitjar@gmail.com</a>
-          <a href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> github.com/casitjar-stack</a>
+          <a href="tel:09995758558"><i class="fa-solid fa-phone"></i> 09995758558</a>
+          <a href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Profile</a>
           <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
-          <a href="https://www.facebook.com/CrstnAnglM.Stjr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook Profile</a>
         </article>
       </aside>
     </section>
@@ -142,7 +188,10 @@
 
   <footer class="site-footer">
     <p>© 2026 Cristian Angelo M. Sitjar. All rights reserved.</p>
-    <a href="Projects.html">View projects</a>
+    <a href="mailto:casitjar@gmail.com">Let’s connect</a>
   </footer>
+
+  <!-- SCRIPT FOR DARK/LIGHT MODE TOGGLE -->
+  <script src="main.js"></script>
 </body>
 </html>
