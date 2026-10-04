@@ -3,119 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Cristian Angelo M. Sitjar, a Software Engineer focused on backend systems, AI automation workflows, APIs, and modern web & mobile applications.">
+  <meta name="description" content="Portfolio of Cristian Angelo M. Sitjar — Software Engineer & Automation Developer.">
   <title>Cristian M. Sitjar | Software Engineer</title>
+  
+  <!-- Font Awesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-glow glow-one"></div>
-  <div class="page-glow glow-two"></div>
 
-  <!-- FLOATING STICKY HEADER -->
+  <!-- NAVIGATION HEADER -->
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Cristian M. Sitjar home">
-      <span class="brand-mark">CS</span>
-      <span class="brand-text">Cristian M. Sitjar</span>
-    </a>
+    <a class="brand" href="index.html">CS</a>
     <div class="nav-container">
-      <nav class="nav-links" aria-label="Primary navigation">
+      <nav class="nav-links">
         <a class="active" href="index.html">Home</a>
         <a href="About.html">About</a>
         <a href="Work.html">Experience</a>
         <a href="Projects.html">Projects</a>
       </nav>
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
       </button>
     </div>
   </header>
 
-  <main>
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Open to software engineering &amp; automation roles</p>
-        <h1>Building reliable backend systems and AI-powered automation solutions.</h1>
-        <p class="hero-subtitle">
-          Hi, I’m <strong>Cristian Angelo M. Sitjar</strong> — a Computer Engineering graduate and Software Engineer with 2 years of professional backend experience, now specializing in server-side logic, API integrations, and intelligent AI workflows.
+  <!-- HERO LANDING SECTION -->
+  <main class="hero-container">
+    <div class="hero-wrapper">
+      
+      <!-- LEFT SIDE: CIRCULAR PORTRAIT WITH GLOW RING -->
+      <div class="hero-avatar-area">
+        <div class="avatar-ring1">
+          <img src="home_picture.png" alt="Cristian Angelo M. Sitjar" class="avatar-img1">
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: BIO & INTRO COPY -->
+      <div class="hero-content-area">
+        <span class="greeting">Hi, It's Cristian</span>
+        <h1 class="role-title">I'm a <span class="accent-text typing-text"></span><span class="cursor">&nbsp;</span></h1>
+        
+        <p class="hero-bio">
+          Computer Engineering graduate with 2 years of professional experience in production backend development, Erlang state systems, REST APIs, and automated AI workflows. Driven by building reliable server logic and clean problem solving.
         </p>
 
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="Projects.html"><i class="fa-solid fa-code"></i> View Projects</a>
-          <a class="btn btn-secondary" href="Work.html"><i class="fa-solid fa-briefcase"></i> Experience</a>
-        </div>
-
-        <div class="social-row" aria-label="Social and professional links">
+        <!-- SOCIAL ICONS -->
+        <div class="social-links">
           <a href="mailto:casitjar@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://www.facebook.com/CrstnAnglM.Stjr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/CrstnAnglM.Stjr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+
+        <!-- CALL TO ACTION -->
+        <div class="cta-area">
+          <a href="mailto:casitjar@gmail.com" class="btn-hire">Contact me</a>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <div class="portrait-card">
-          <div class="portrait-frame">
-            <img src="home_picture.png" alt="Cristian M. Sitjar">
-          </div>
-          <div class="portrait-info">
-            <div>
-              <p class="muted-label">Current focus</p>
-              <strong>Backend &amp; AI Workflow Automation</strong>
-            </div>
-            <span class="availability-badge">Available</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="quick-stats section-shell" aria-label="Career highlights">
-      <article class="stat-card">
-        <span class="stat-number">2 yrs</span>
-        <span class="stat-label">Professional software engineering experience</span>
-      </article>
-      <article class="stat-card">
-        <span class="stat-number">AI &amp; n8n</span>
-        <span class="stat-label">Automated pipeline &amp; LLM API integrations</span>
-      </article>
-      <article class="stat-card">
-        <span class="stat-number">3 mo.</span>
-        <span class="stat-label">Intensive Erlang company bootcamp</span>
-      </article>
-      <article class="stat-card">
-        <span class="stat-number">2024</span>
-        <span class="stat-label">BS Computer Engineering graduate</span>
-      </article>
-    </section>
-
-    <section class="section-shell home-grid">
-      <article class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-gears"></i></div>
-        <p class="eyebrow">What I do</p>
-        <h2>Backend engineering with AI &amp; automation capabilities.</h2>
-        <p>I design server-side solutions, RESTful APIs, data processing logic, and automated workflows. Combining traditional software development with modern tools like n8n and Generative AI APIs, I build systems that reduce manual workload and increase operation efficiency.</p>
-        <a class="text-link" href="Work.html">Explore my experience <i class="fa-solid fa-arrow-right"></i></a>
-      </article>
-
-      <article class="feature-card accent-card">
-        <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
-        <p class="eyebrow">Featured project</p>
-        <h2>AI-Powered Workflow Automation Pipeline</h2>
-        <p>An automated workflow engine utilizing n8n, OpenAI/Gemini APIs, and Webhooks for automated data processing, intelligent summaries, and real-time message routing to Telegram &amp; Google Sheets.</p>
-        <a class="text-link" href="Projects.html#ai-automation">See project details <i class="fa-solid fa-arrow-right"></i></a>
-      </article>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <p>© 2026 Cristian Angelo M. Sitjar. All rights reserved.</p>
-    <a href="mailto:casitjar@gmail.com">casitjar@gmail.com</a>
   </footer>
 
-  <!-- SCRIPT FOR DARK/LIGHT MODE TOGGLE -->
   <script src="main.js"></script>
 </body>
 </html>

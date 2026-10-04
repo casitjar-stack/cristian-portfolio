@@ -3,195 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional experience and technical skills of Cristian Angelo M. Sitjar.">
+  <meta name="description" content="Professional Experience of Cristian Angelo M. Sitjar — Software Engineer.">
   <title>Experience | Cristian M. Sitjar</title>
+  
+  <!-- Font Awesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-glow glow-one"></div>
-  <div class="page-glow glow-two"></div>
 
-  <!-- FLOATING STICKY HEADER -->
+  <!-- NAVIGATION HEADER -->
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">CS</span><span class="brand-text">Cristian M. Sitjar</span></a>
+    <a class="brand" href="index.html">CS</a>
     <div class="nav-container">
-      <nav class="nav-links" aria-label="Primary navigation">
+      <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
         <a class="active" href="Work.html">Experience</a>
         <a href="Projects.html">Projects</a>
       </nav>
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
       </button>
     </div>
   </header>
 
-  <main>
-    <section class="page-heading section-shell">
-      <p class="eyebrow">Professional journey</p>
-      <h1>Backend development experience, structured bootcamp, and AI integration.</h1>
-      <p>My career began with an intensive Erlang bootcamp and two years of production backend software development at JRA Technologies Inc., and continues to evolve through hands-on project work in NestJS, Flutter, REST APIs, and AI automation workflows.</p>
-    </section>
-
-    <section class="section-shell experience-grid">
-      <div class="main-column">
-        <article class="glass-card timeline-card">
-          <div class="timeline-head">
-            <div>
-              <p class="meta">June 2024 — June 2026 • Makati City</p>
-              <h2>Junior Software Engineer</h2>
-              <p class="company">JRA Technologies Inc.</p>
-            </div>
-            <span class="role-badge">2 Years</span>
-          </div>
-
-          <ul class="clean-list">
-            <li>Developed and maintained server-side logic and backend features using Erlang/OTP.</li>
-            <li>Handled backend CRUD operations, business logic, data processing, and debugging production issues.</li>
-            <li>Contributed to a Fleet Management System and loan management modules.</li>
-            <li>Helped resolve bulk-upload performance bottlenecks by using message queues for sequential execution.</li>
-            <li>Participated in regular stand-ups, code reviews, testing, and deployment preparation.</li>
-            <li>Assisted incoming trainees by guiding them through Erlang bootcamp concepts and exercises.</li>
-          </ul>
-        </article>
-
-        <article class="glass-card">
-          <p class="eyebrow">Formal preparation</p>
-          <h2>Company Bootcamp Progression</h2>
-          <div class="training-grid">
-            <div class="training-item">
-              <span>L1</span>
-              <div>
-                <strong>Vernam 26 Cipher</strong>
-                <p>Implemented text encryption/decryption in Erlang using recursion, string processing, and functional concepts.</p>
-              </div>
-            </div>
-            <div class="training-item">
-              <span>L2</span>
-              <div>
-                <strong>Galois LFSR (Binary)</strong>
-                <p>Built a binary pseudo-random generator in Erlang using bit manipulation and recursive algorithms.</p>
-              </div>
-            </div>
-            <div class="training-item">
-              <span>L3</span>
-              <div>
-                <strong>Replication Server (BCL)</strong>
-                <p>Built a data replication mechanism mirroring Mnesia records into ETS for in-memory synchronization practice.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="glass-card">
-          <p class="eyebrow">Practical experience</p>
-          <h2>On-the-Job Training</h2>
-          <p class="company">A.L.E - Component International Incorporated • Jul 2023 – Aug 2023</p>
-          <ul class="clean-list compact-list">
-            <li>Handled hardware/software troubleshooting, OS installation, and manual system testing.</li>
-            <li>Managed IT asset inventory and assisted technical support teams in day-to-day operations.</li>
-          </ul>
-        </article>
-
-        <!-- Resume Download Card -->
-        <article class="glass-card resume-card">
-          <div class="resume-copy">
-            <p class="eyebrow">Curriculum Vitae</p>
-            <h2>Looking for a detailed resume?</h2>
-            <p>You can view my complete professional history, educational background, and technical credentials in PDF format.</p>
-          </div>
-          <div class="resume-actions">
-            <a class="btn btn-primary" href="Resume - Cristian M. Sitjar.pdf" target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-file-pdf"></i> View Resume PDF
-            </a>
-            <a class="btn btn-secondary" href="Resume - Cristian M. Sitjar.pdf" download="Resume_Cristian_Sitjar.pdf">
-              <i class="fa-solid fa-download"></i> Download PDF
-            </a>
-          </div>
-        </article>
+  <main class="experience-container">
+    
+    <!-- PAGE HEADING & PERFECTLY CENTERED CIRCULAR PHOTO -->
+    <section class="experience-header" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; text-align: center; margin: 0 auto;">
+      
+      <!-- PERFECTLY CENTERED CIRCULAR PHOTO CONTAINER -->
+      <div class="hero-avatar-area" style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 0 auto 1.5rem auto;">
+        <div class="avatar-ring" style="margin: 0 auto;">
+          <img src="work_picture.jpg" alt="Cristian Angelo M. Sitjar" class="avatar-img" style="border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;">
+        </div>
       </div>
 
-      <aside class="side-column">
-        <article class="glass-card profile-summary-card">
-          <img src="work_picture.jpg" alt="Cristian M. Sitjar">
-          <div>
-            <h3>Cristian Angelo M. Sitjar</h3>
-            <p class="meta">BS Computer Engineering Graduate</p>
-            <p>Cavite State University – CCAT Campus (2019 – 2024)</p>
-          </div>
-        </article>
-
-        <article class="glass-card">
-          <p class="eyebrow">Technical Stack</p>
-          <h2>Tools &amp; Technologies</h2>
-          <div class="skill-groups">
-            <div>
-              <strong>AI &amp; Automation</strong>
-              <div class="skill-tags">
-                <span>n8n</span>
-                <span>OpenAI API</span>
-                <span>Gemini API</span>
-                <span>Webhooks</span>
-                <span>Prompt Engineering</span>
-                <span>Workflow Automation</span>
-              </div>
-            </div>
-            <div>
-              <strong>Backend &amp; Languages</strong>
-              <div class="skill-tags">
-                <span>Erlang/OTP</span>
-                <span>NestJS</span>
-                <span>TypeScript</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-                <span>Dart</span>
-                <span>C++ (Arduino)</span>
-              </div>
-            </div>
-            <div>
-              <strong>Databases &amp; Mobile</strong>
-              <div class="skill-tags">
-                <span>Cloud Firestore</span>
-                <span>MySQL</span>
-                <span>Mnesia / ETS</span>
-                <span>Flutter</span>
-                <span>REST APIs</span>
-              </div>
-            </div>
-            <div>
-              <strong>Tools &amp; Workflow</strong>
-              <div class="skill-tags">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Vitest</span>
-                <span>XAMPP</span>
-                <span>Postman / Bruno</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="glass-card contact-card">
-          <p class="eyebrow">Get in touch</p>
-          <a href="mailto:casitjar@gmail.com"><i class="fa-solid fa-envelope"></i> casitjar@gmail.com</a>
-          <a href="tel:09995758558"><i class="fa-solid fa-phone"></i> 09995758558</a>
-          <a href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Profile</a>
-          <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
-        </article>
-      </aside>
+      <span class="greeting" style="display: block; width: 100%; text-align: center;">Career Track</span>
+      <h1 class="role-title" style="display: block; width: 100%; text-align: center;">Professional <span class="accent-text">Experience</span></h1>
+      <p class="about-bio" style="margin: 0 auto; max-width: 600px; text-align: center;">
+        Two years of production backend software engineering, building Erlang services, REST APIs, and automating AI pipelines.
+      </p>
     </section>
+
+    <!-- ANIMATED TECH LOGO TICKER / MARQUEE -->
+    <section class="tech-marquee-wrapper">
+      <span class="marquee-label">// Tools &amp; Technologies I Work With</span>
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <div class="tech-item"><i class="fa-brands fa-erlang"></i> Erlang/OTP</div>
+          <div class="tech-item"><i class="fa-brands fa-node-js"></i> NestJS</div>
+          <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="tech-item"><i class="fa-solid fa-robot"></i> n8n AI Workflows</div>
+          <div class="tech-item"><i class="fa-brands fa-flutter"></i> Flutter</div>
+          <div class="tech-item"><i class="fa-database"></i> MySQL</div>
+          <div class="tech-item"><i class="fa-brands fa-php"></i> PHP</div>
+          <div class="tech-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+          <div class="tech-item"><i class="fa-solid fa-fire"></i> Firestore</div>
+          <!-- DUPLICATE FOR INFINITE LOOP EFFECT -->
+          <div class="tech-item"><i class="fa-brands fa-erlang"></i> Erlang/OTP</div>
+          <div class="tech-item"><i class="fa-brands fa-node-js"></i> NestJS</div>
+          <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="tech-item"><i class="fa-solid fa-robot"></i> n8n AI Workflows</div>
+          <div class="tech-item"><i class="fa-brands fa-flutter"></i> Flutter</div>
+          <div class="tech-item"><i class="fa-database"></i> MySQL</div>
+          <div class="tech-item"><i class="fa-brands fa-php"></i> PHP</div>
+          <div class="tech-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+          <div class="tech-item"><i class="fa-solid fa-fire"></i> Firestore</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK TIMELINE -->
+    <section class="timeline-section">
+      <div class="timeline-item">
+        <div class="timeline-head">
+          <div>
+            <h3>Software Engineer</h3>
+            <span class="company-name">JRA Technologies Inc. — Makati City</span>
+          </div>
+          <span class="timeline-date">Jun 2024 — Jun 2026</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Developed and maintained backend services using Erlang/OTP for enterprise applications.</li>
+          <li>Implemented server-side CRUD logic, data-handling routines, and process state machines.</li>
+          <li>Analyzed production logs, traced bugs, and deployed updates for continuous system reliability.</li>
+          <li>Mentored incoming trainees during the company's internal software bootcamp.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-head">
+          <div>
+            <h3>On the Job Training</h3>
+            <span class="company-name">A.L.E - Component International Inc. — Rosario, Cavite</span>
+          </div>
+          <span class="timeline-date">Jul 2023 — Aug 2023</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Performed hardware and software troubleshooting, manual testing, and Windows OS installations.</li>
+          <li>Managed IT asset inventory and collaborated with the technical support team.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT INFORMATION SECTION -->
+    <section class="contact-card-section">
+      <h2 class="contact-title">Contact <span class="accent-text">Details</span></h2>
+      
+      <!-- RESUME BUTTONS (EXACT POSITION WITH GOOD SPACING) -->
+      <div class="resume-actions" style="margin-top: 1.5rem; margin-bottom: 2.5rem; display: flex; gap: 1rem; justify-content: center;">
+        <a href="Resume - Cristian M. Sitjar.pdf" target="_blank" class="btn-hire"><i class="fa-solid fa-eye"></i> View Resume</a>
+        <a href="Resume - Cristian M. Sitjar.pdf" download class="btn-secondary"><i class="fa-solid fa-download"></i> Download Resume</a>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span class="contact-label">EMAIL</span>
+            <a href="mailto:casitjar@gmail.com">casitjar@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <span class="contact-label">PHONE</span>
+            <a href="tel:09995758558">09995758558</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span class="contact-label">LOCATION</span>
+            <span>Rosario, Cavite, Philippines</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <div>
+            <span class="contact-label">LINKEDIN</span>
+            <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank" rel="noopener noreferrer">Cristian Angelo Sitjar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <p>© 2026 Cristian Angelo M. Sitjar. All rights reserved.</p>
-    <a href="mailto:casitjar@gmail.com">Let’s connect</a>
   </footer>
 
-  <!-- SCRIPT FOR DARK/LIGHT MODE TOGGLE -->
   <script src="main.js"></script>
 </body>
 </html>
