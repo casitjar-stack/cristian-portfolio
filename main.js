@@ -94,3 +94,21 @@ document.addEventListener('DOMContentLoaded', () => {
     projectCards.forEach(card => observer.observe(card));
   }
 });
+
+// --- ABOUT PAGE ANIMATIONS (LEFT & RIGHT SLIDE) ---
+  const aboutElements = document.querySelectorAll('.about-animate-left, .about-animate-right');
+
+  if (aboutElements.length > 0) {
+    const aboutObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    aboutElements.forEach(el => aboutObserver.observe(el));
+  }
