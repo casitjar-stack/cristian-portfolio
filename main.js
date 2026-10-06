@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggleBtn = document.getElementById('theme-toggle');
   const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
 
-  // Retrieve theme preference or default to dark
+  // Retrieve theme preference or default to light
   const savedTheme = localStorage.getItem('theme') || 'light';
 
   function applyTheme(theme) {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggleBtn.addEventListener('click', () => {
       const currentTheme = document.documentElement.getAttribute('data-theme');
       const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      
+
       applyTheme(newTheme);
       localStorage.setItem('theme', newTheme);
     });
@@ -93,9 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     projectCards.forEach(card => observer.observe(card));
   }
-});
 
-// --- ABOUT PAGE ANIMATIONS (LEFT & RIGHT SLIDE) ---
+  // --- 4. ABOUT SECTION ANIMATIONS (LEFT & RIGHT SLIDE) ---
   const aboutElements = document.querySelectorAll('.about-animate-left, .about-animate-right');
 
   if (aboutElements.length > 0) {
@@ -112,3 +111,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     aboutElements.forEach(el => aboutObserver.observe(el));
   }
+
+  // --- 5. ONE-PAGE NAV: HIGHLIGHT ACTIVE SECTION WHILE SCROLLING ---
+  const navLinks = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+  const navSections = navLinks
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  function updateActiveNav() {
+    if (navSections.length === 0) return;
+
+    const scrollPos = window.scrollY + 140;
+    let current = navSections[0];
+
+    navSections.forEach(section => {
+      const top = section.getBoundingClientRect().top + window.scrollY;
+      if (top <= scrollPos) current = section;
+    });
+
+    // Kapag nasa pinakababa na ng page, laging huling section ang active
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+      current = navSections[navSections.length - 1];
+    }
+
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current.id);
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  window.addEventListener('resize', updateActiveNav);
+  updateActiveNav();
+
+  // --- 6. SCROLL DOWN INDICATOR: MAWAWALA KAPAG NAG-SCROLL NA ---
+  const scrollDown = document.querySelector('.scroll-down');
+  if (scrollDown) {
+    const toggleScrollHint = () => {
+      scrollDown.classList.toggle('hide', window.scrollY > 80);
+    };
+    window.addEventListener('scroll', toggleScrollHint, { passive: true });
+    toggleScrollHint();
+  }
+});

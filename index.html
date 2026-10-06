@@ -5,26 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Cristian Angelo M. Sitjar — Software Engineer & Automation Developer.">
   <title>Cristian M. Sitjar | Software Engineer</title>
-  
+
   <!-- Font Awesome Icons & Google Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- NAVIGATION HEADER -->
   <header class="site-header">
-    <a class="brand" href="index.html">CS</a>
+    <a class="brand" href="#home">CS</a>
     <div class="nav-container">
-      <nav class="nav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Work.html">Experience</a>
-        <a href="Projects.html">Projects</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
       </nav>
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
         <i class="fa-solid fa-sun"></i>
@@ -32,41 +32,374 @@
     </div>
   </header>
 
-  <!-- HERO LANDING SECTION -->
-  <main class="hero-container">
-    <div class="hero-wrapper">
-      
-      <!-- LEFT SIDE: CIRCULAR PORTRAIT WITH GLOW RING -->
-      <div class="hero-avatar-area">
-        <div class="avatar-ring1">
-          <img src="home_picture.png" alt="Cristian Angelo M. Sitjar" class="avatar-img1">
+  <main class="one-page">
+
+    <!-- ==================== HOME ==================== -->
+    <section id="home" class="hero-container">
+      <div class="hero-wrapper">
+
+        <!-- LEFT SIDE: CIRCULAR PORTRAIT WITH GLOW RING -->
+        <div class="hero-avatar-area">
+          <div class="avatar-ring1">
+            <img src="home_picture.png" alt="Cristian Angelo M. Sitjar" class="avatar-img1">
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: BIO & INTRO COPY -->
+        <div class="hero-content-area">
+          <span class="greeting">Hi, It's Cristian</span>
+          <h1 class="role-title">I'm a <span class="accent-text typing-text"></span><span class="cursor">&nbsp;</span></h1>
+
+          <p class="hero-bio">
+            Computer Engineering graduate with 2 years of professional experience in production backend development, Erlang state systems, REST APIs, and automated AI workflows. Driven by building reliable server logic and clean problem solving.
+          </p>
+
+          <!-- SOCIAL ICONS -->
+          <div class="social-links">
+            <a href="mailto:casitjar@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/CrstnAnglM.Stjr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+
+          <!-- CALL TO ACTION -->
+          <div class="cta-area">
+            <a href="mailto:casitjar@gmail.com" class="btn-hire">Contact me</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SCROLL DOWN INDICATOR -->
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span class="scroll-text">Scroll down</span>
+        <span class="mouse"></span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="about-container">
+
+      <!-- TOP SECTION: BACKGROUND TEXT (LEFT) & PICTURE 1 (RIGHT) -->
+      <div class="about-row">
+        <!-- LEFT SIDE -->
+        <div class="about-text-box about-animate-left">
+          <span class="greeting">Background</span>
+          <h2 class="role-title">Software Engineer &amp; <span class="accent-text">Problem Solver</span></h2>
+          <p class="about-bio">
+            I’m Cristian Angelo M. Sitjar, a Bachelor of Science in Computer Engineering graduate from Cavite State University – CCAT Campus. After graduating, I joined JRA Technologies Inc. as a Junior Software Engineer, starting with an intensive Erlang bootcamp before joining production projects.
+          </p>
+          <p class="about-bio">
+            In my two years in software development, I worked on backend CRUD features, system debugging, data processing logic, state machines, and production issue resolution. I also collaborated across teams, joined daily stand-ups, and helped guide incoming trainees during bootcamps.
+          </p>
+          <p class="about-bio">
+            I’m expanding beyond Erlang by building projects with n8n, AI APIs (OpenAI/Gemini), NestJS, REST APIs, Flutter, Firestore, MySQL, and Git.
+          </p>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="about-photo-box about-animate-right">
+          <div class="photo-frame">
+            <img src="about_picture1.jpg" alt="Cristian Sitjar outdoors">
+          </div>
         </div>
       </div>
 
-      <!-- RIGHT SIDE: BIO & INTRO COPY -->
-      <div class="hero-content-area">
-        <span class="greeting">Hi, It's Cristian</span>
-        <h1 class="role-title">I'm a <span class="accent-text typing-text"></span><span class="cursor">&nbsp;</span></h1>
-        
-        <p class="hero-bio">
-          Computer Engineering graduate with 2 years of professional experience in production backend development, Erlang state systems, REST APIs, and automated AI workflows. Driven by building reliable server logic and clean problem solving.
+      <!-- BOTTOM SECTION: PICTURE 2 (LEFT) & INTERESTS (RIGHT) -->
+      <div class="about-row reverse-row">
+        <!-- LEFT SIDE -->
+        <div class="about-photo-box about-animate-left">
+          <div class="photo-frame">
+            <img src="about_picture2.jpg" alt="Cristian Sitjar casual setting">
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="about-text-box about-animate-right">
+          <span class="greeting">Beyond Code</span>
+          <h2 class="role-title">Interests &amp; <span class="accent-text">Hobbies</span></h2>
+          <p class="about-bio">
+            When I'm not writing code or analyzing backend logic, I spend my time playing strategic games, keeping active, and enjoying quiet moments.
+          </p>
+
+          <div class="interest-grid">
+            <div class="interest-chip">🏀 Basketball</div>
+            <div class="interest-chip">🎱 Billiards</div>
+            <div class="interest-chip">♟️ Chess</div>
+            <div class="interest-chip">🎮 Valorant &amp; ML</div>
+            <div class="interest-chip">🐶 Dogs</div>
+            <div class="interest-chip">☕ Coffee</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="experience-container">
+
+      <!-- PAGE HEADING & PERFECTLY CENTERED CIRCULAR PHOTO -->
+      <div class="experience-header" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; text-align: center; margin: 0 auto;">
+
+        <div class="hero-avatar-area" style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 0 auto 1.5rem auto;">
+          <div class="avatar-ring" style="margin: 0 auto;">
+            <img src="work_picture.jpg" alt="Cristian Angelo M. Sitjar" class="avatar-img" style="border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;">
+          </div>
+        </div>
+
+        <span class="greeting" style="display: block; width: 100%; text-align: center;">Career Track</span>
+        <h2 class="role-title" style="display: block; width: 100%; text-align: center;">Professional <span class="accent-text">Experience</span></h2>
+        <p class="about-bio" style="margin: 0 auto; max-width: 600px; text-align: center;">
+          Two years of production backend software engineering, building Erlang services, REST APIs, and automating AI pipelines.
         </p>
+      </div>
 
-        <!-- SOCIAL ICONS -->
-        <div class="social-links">
-          <a href="mailto:casitjar@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.facebook.com/CrstnAnglM.Stjr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
-
-        <!-- CALL TO ACTION -->
-        <div class="cta-area">
-          <a href="mailto:casitjar@gmail.com" class="btn-hire">Contact me</a>
+      <!-- ANIMATED TECH LOGO TICKER / MARQUEE -->
+      <div class="tech-marquee-wrapper">
+        <span class="marquee-label">// Tools &amp; Technologies I Work With</span>
+        <div class="marquee-track">
+          <div class="marquee-content">
+            <div class="tech-item"><i class="fa-brands fa-erlang"></i> Erlang/OTP</div>
+            <div class="tech-item"><i class="fa-brands fa-node-js"></i> NestJS</div>
+            <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="tech-item"><i class="fa-solid fa-robot"></i> n8n AI Workflows</div>
+            <div class="tech-item"><i class="fa-solid fa-mobile-screen-button"></i> Flutter</div>
+            <div class="tech-item"><i class="fa-solid fa-database"></i> MySQL</div>
+            <div class="tech-item"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="tech-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="tech-item"><i class="fa-solid fa-fire"></i> Firestore</div>
+            <!-- DUPLICATE FOR INFINITE LOOP EFFECT -->
+            <div class="tech-item"><i class="fa-brands fa-erlang"></i> Erlang/OTP</div>
+            <div class="tech-item"><i class="fa-brands fa-node-js"></i> NestJS</div>
+            <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="tech-item"><i class="fa-solid fa-robot"></i> n8n AI Workflows</div>
+            <div class="tech-item"><i class="fa-solid fa-mobile-screen-button"></i> Flutter</div>
+            <div class="tech-item"><i class="fa-solid fa-database"></i> MySQL</div>
+            <div class="tech-item"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="tech-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="tech-item"><i class="fa-solid fa-fire"></i> Firestore</div>
+          </div>
         </div>
       </div>
 
-    </div>
+      <!-- WORK TIMELINE -->
+      <div class="timeline-section">
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <div>
+              <h3>Software Engineer</h3>
+              <span class="company-name">JRA Technologies Inc. — Makati City</span>
+            </div>
+            <span class="timeline-date">Jun 2024 — Jun 2026</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Developed and maintained backend services using Erlang/OTP for enterprise applications.</li>
+            <li>Implemented server-side CRUD logic, data-handling routines, and process state machines.</li>
+            <li>Analyzed production logs, traced bugs, and deployed updates for continuous system reliability.</li>
+            <li>Mentored incoming trainees during the company's internal software bootcamp.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <div>
+              <h3>On the Job Training</h3>
+              <span class="company-name">A.L.E - Component International Inc. — Rosario, Cavite</span>
+            </div>
+            <span class="timeline-date">Jul 2023 — Aug 2023</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Performed hardware and software troubleshooting, manual testing, and Windows OS installations.</li>
+            <li>Managed IT asset inventory and collaborated with the technical support team.</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="projects-page">
+
+      <div class="page-heading section-shell">
+        <p class="eyebrow">Selected projects</p>
+        <h1>Projects that show how I learn, build, test, and ship.</h1>
+        <p>From AI automation workflows and backend APIs to mobile apps, full-stack fundamentals, and embedded systems, these projects reflect both my professional direction and hands-on technical expansion.</p>
+      </div>
+
+      <div class="section-shell projects-grid">
+
+        <!-- AI Automation Project -->
+        <article class="project-card featured-project" id="ai-automation">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-topline">
+              <span class="project-type">AI & Automation</span>
+              <span class="project-status">Featured</span>
+            </div>
+            <h2>AI-Powered Workflow Automation Pipeline</h2>
+            <p>An automated workflow pipeline designed to seamlessly integrate LLM APIs (OpenAI / Gemini) with third-party tools, handling data extraction, real-time message routing, and automated task execution without manual intervention.</p>
+            <ul class="clean-list compact-list">
+              <li>Built custom n8n / webhook pipelines to automate document processing and instant message handling.</li>
+              <li>Integrated Generative AI models to analyze unstructured inputs, summarize content, and make structured decisions.</li>
+              <li>Connected external channels (Telegram / Email / Google Sheets) for real-time notifications and synchronized data storage.</li>
+              <li>Designed for high reliability, robust error handling, and scalable execution across services.</li>
+            </ul>
+            <div class="skill-tags">
+              <span>n8n</span>
+              <span>OpenAI API</span>
+              <span>Gemini API</span>
+              <span>Webhooks</span>
+              <span>REST API</span>
+              <span>JSON Parsing</span>
+              <span>Automation</span>
+            </div>
+            <div class="project-links">
+              <a class="btn btn-secondary" href="https://github.com/casitjar-stack" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> GitHub Repository
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cartly Shopping List App -->
+        <article class="project-card" id="cartly">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-type">Mobile + Backend</span></div>
+            <h2>Cartly — Shopping List Application</h2>
+            <p>A full-stack shopping list project built with a Flutter mobile client, NestJS backend, Firebase Admin SDK, and Cloud Firestore. User data is isolated through an <code>x-user-id</code> request header.</p>
+            <ul class="clean-list compact-list">
+              <li>Create, list, toggle, and delete shopping-list items.</li>
+              <li>Clear bought items while preserving user ownership boundaries.</li>
+              <li>Backend tests verify missing-user rejection and user-isolated operations.</li>
+              <li>Flutter tests and static analysis completed successfully.</li>
+            </ul>
+            <div class="skill-tags"><span>Flutter</span><span>Dart</span><span>NestJS</span><span>TypeScript</span><span>Firestore</span><span>Vitest</span><span>REST API</span></div>
+            <div class="project-links">
+              <a class="btn btn-secondary" href="https://github.com/casitjar-stack/cartly" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Student Portal -->
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-type">Full Stack Practice</span></div>
+            <h2>Student Portal</h2>
+            <p>A web-based student portal focused on authentication, CRUD operations, session handling, role-based authorization, and secure database access.</p>
+            <ul class="clean-list compact-list">
+              <li>Student registration and login with password hashing.</li>
+              <li>Session management and login-attempt limiting.</li>
+              <li>Admin and student roles with different permissions.</li>
+              <li>Prepared statements and profile update functionality.</li>
+            </ul>
+            <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>XAMPP</span></div>
+            <div class="project-links">
+              <a class="btn btn-secondary" href="https://casitjar-portal-demo.freedev.app/html/index.html?i=1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Automated Mist Disinfectant Robot -->
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-type">Embedded Systems</span></div>
+            <h2>Automated Mist Disinfectant Robot</h2>
+            <p>An academic microcontroller-based robot designed to move autonomously, detect obstacles, and spray disinfectant mist in an area with minimal human intervention.</p>
+            <div class="skill-tags"><span>Arduino</span><span>C++</span><span>Microcontrollers</span><span>Sensors</span><span>Automation</span></div>
+          </div>
+        </article>
+
+        <!-- Arduino Robotic Arm -->
+        <article class="project-card">
+          <div class="project-number">05</div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-type">Embedded Systems</span></div>
+            <h2>Arduino Robotic Arm</h2>
+            <p>A programmable robotic arm capable of movement and gripping actions for manipulating small objects, built to practice control logic and hardware-software integration.</p>
+            <div class="skill-tags"><span>Arduino</span><span>C++</span><span>Servo Control</span><span>Hardware Integration</span></div>
+          </div>
+        </article>
+
+        <!-- Backend Systems at JRA Technologies -->
+        <article class="project-card wide-project">
+          <div class="project-number">06</div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-type">Professional Project Highlights</span></div>
+            <h2>Backend Systems at JRA Technologies</h2>
+            <p>Production work included a Fleet Management System and a loan-management system. My contributions focused on backend logic, CRUD operations, state machines, debugging, data processing, and reliability improvements in Erlang-based systems.</p>
+            <div class="project-case">
+              <strong>Problem solved:</strong>
+              <p>A bulk-upload flow occasionally missed rows because requests were inserting too quickly. I helped address the issue by routing requests through a message queue so writes could be processed in sequence.</p>
+            </div>
+            <div class="skill-tags"><span>Erlang/OTP</span><span>State Machines</span><span>Message Passing</span><span>Backend CRUD</span><span>Debugging</span><span>Data Handling</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="experience-container">
+
+      <!-- CONTACT INFORMATION SECTION -->
+      <div class="contact-card-section">
+        <h2 class="contact-title">Contact <span class="accent-text">Details</span></h2>
+
+        <!-- RESUME BUTTONS -->
+        <div class="resume-actions" style="margin-top: 1.5rem; margin-bottom: 2.5rem; display: flex; gap: 1rem; justify-content: center;">
+          <a href="Resume - Cristian M. Sitjar.pdf" target="_blank" class="btn-hire"><i class="fa-solid fa-eye"></i> View Resume</a>
+          <a href="Resume - Cristian M. Sitjar.pdf" download class="btn-secondary"><i class="fa-solid fa-download"></i> Download Resume</a>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="contact-label">EMAIL</span>
+              <a href="mailto:casitjar@gmail.com">casitjar@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="contact-label">PHONE</span>
+              <a href="tel:09995758558">09995758558</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span class="contact-label">LOCATION</span>
+              <span>Rosario, Cavite, Philippines</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <span class="contact-label">LINKEDIN</span>
+              <a href="https://www.linkedin.com/in/cristian-angelo-sitjar-0196b3305/" target="_blank" rel="noopener noreferrer">Cristian Angelo Sitjar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
   <footer class="site-footer">

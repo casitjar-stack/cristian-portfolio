@@ -9,7 +9,7 @@
   --accent-glow: rgba(250, 204, 21, 0.35);
   --border-color: rgba(255, 255, 255, 0.1);
   --font-family: 'Poppins', -apple-system, sans-serif;
-  --max-width: 1000px;
+  --max-width: 1280px;
 }
 
 [data-theme="light"] {
@@ -924,4 +924,142 @@ body, main {
 .about-animate-right.show {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* ==========================================
+   ONE-PAGE LAYOUT (bagong dagdag lang — walang binago sa existing styles)
+   ========================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Wrapper ng lahat ng sections (para hindi tamaan ng global `main` rule) */
+main.one-page {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+/* Para hindi matakpan ng sticky header kapag nag-scroll sa section */
+.one-page section[id] {
+  scroll-margin-top: 90px;
+}
+
+/* Home = buong screen gaya ng dati */
+#home {
+  min-height: calc(100vh - 80px);
+}
+
+/* Dating <main> styles ng Projects page */
+.projects-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+@media (max-width: 600px) {
+  .one-page section[id] {
+    scroll-margin-top: 140px;
+  }
+  #home {
+    min-height: calc(100vh - 120px);
+  }
+}
+
+
+/* ==========================================
+   DIVIDER SA PAGITAN NG SECTIONS
+   ========================================== */
+.section-divider {
+  border: 0;
+  height: 1px;
+  width: min(calc(100% - 4rem), calc(var(--max-width) - 4rem));
+  margin: 1.5rem auto;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  opacity: 0.6;
+}
+
+
+/* ==========================================
+   SCROLL DOWN INDICATOR (HOME)
+   ========================================== */
+#home {
+  position: relative;
+  padding-bottom: 5.5rem;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: opacity 0.4s ease, color 0.2s ease;
+}
+
+.scroll-down:hover {
+  color: var(--accent-color);
+}
+
+.scroll-text {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.scroll-down .mouse {
+  position: relative;
+  width: 24px;
+  height: 38px;
+  border: 2px solid var(--accent-color);
+  border-radius: 14px;
+}
+
+.scroll-down .mouse::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 4px;
+  height: 8px;
+  margin-left: -2px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  animation: scrollWheel 1.6s ease-in-out infinite;
+}
+
+.scroll-down i {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  animation: bounceArrow 1.6s ease-in-out infinite;
+}
+
+.scroll-down.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes scrollWheel {
+  0%   { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(14px); }
+}
+
+@keyframes bounceArrow {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
+}
+
+/* CONTACT SECTION (nasa pinakababa na) — divider na ang nagsisilbing guhit */
+#contact .contact-card-section {
+  border-top: none;
+  padding-top: 0;
 }
